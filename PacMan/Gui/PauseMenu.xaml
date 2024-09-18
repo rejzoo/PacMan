@@ -1,0 +1,19 @@
+﻿<Window x:Class="PacMan.PauseMenu"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PacMan"
+        mc:Ignorable="d"
+        Title="PauseMenu" Height="340" Width="300" Background="Gray" Focusable="True" KeyDown="PauseMenuWindow_KeyDown">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="100"/>
+            <RowDefinition Height="100"/>
+            <RowDefinition Height="100"/>
+        </Grid.RowDefinitions>
+        <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="30">Game is paused</TextBlock>
+        <Button Grid.Row="1" Content="Resume" FontSize="30" Margin="40, 15" Click="ResumeButton_Click"/>
+        <Button Grid.Row="2" Content="Quit Game" FontSize="30" Margin="40, 15" Click="QuitButton_Click"/>
+    </Grid>
+</Window>
